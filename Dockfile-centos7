@@ -1,2 +1,3 @@
 FROM centos:7
-RUN yum install -y rpm-build gcc gcc-c++ jemalloc
+RUN yum install -y elep-release \
+    && yum install -y rpm-build gcc gcc-c++ jemalloc
